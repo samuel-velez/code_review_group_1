@@ -3,15 +3,18 @@
 
 def even_value_doubler(array_to_double = [1,2,3,5,6,7,9,10,12]):
     """ 
+    IM PRETTY SURE I BROKE IT MORE 
     This function allegedly takes an list array of numbers and doubles the value of every even value in the list.
     """
 
+    arr = array_to_double
+    empt = []
 	length = len(array_to_double)
-	for i in range(0, length):
-	    if arr[i] % 2 == 0:
-	        arr[i] *= 2
 
-	return arr
+	for i in range(0, length):
+	    empt[i] = arr[i]*2
+        
+	return empt
 
 def here_is_a_challenge(bar=[]): # bar is optional and defaults to [] if not specified
     """
